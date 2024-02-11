@@ -24,7 +24,7 @@ public interface StudentMapper {
             String maths = subSectionFieldSelector.fieldSelector(
                     subSection,
                     Subjects::getSubjectScore,
-                    (score) -> "maths".equalsIgnoreCase(score.getSubjectScore())
+                    (score) -> "maths".equalsIgnoreCase(score.getSubjectName())
             );
             return maths;
 
